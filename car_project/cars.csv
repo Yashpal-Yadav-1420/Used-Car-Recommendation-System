@@ -1,0 +1,16 @@
+car_name,price,mileage,brand
+Swift,600000,22,Maruti
+Baleno,750000,21,Maruti
+WagonR,550000,23,Maruti
+Alto,400000,24,Maruti
+i20,800000,20,Hyundai
+Creta,1200000,17,Hyundai
+Venue,950000,18,Hyundai
+Verna,1100000,19,Hyundai
+City,1300000,18,Honda
+Amaze,900000,19,Honda
+Jazz,850000,21,Honda
+Altroz,700000,23,Tata
+Nexon,1100000,18,Tata
+Tiago,550000,24,Tata
+Punch,650000,22,Tata

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverFlow</title>
+    <style>
+        .box{
+            width: 10vw;
+            /*40% of the viewport width*/
+            height: 10vh;/* 40% of the viewport height*/
+            border: 2px solid black;
+            /*Two waye to fix overflow*/
+            /*1) using overflow property*/
+            overflow: scroll;/*agar isko auto kar dete to scroll bar aapk tabhi dekhne ko milega jab overflow karega nahi to naho dikhega.Note:- overflow: clip: and hidden bahut jayada similar hoti hain  */
+            /*white-space: nowrap; Sirf horizontal me scroll bar aayega vertical me nahi */
+            /*text-overflow: ellipsis; yeh karne se ... yeh aagate hain */
+            /*overflow-x: hidden; Aap hidden use karne ke baad scrool nahi kar sakte*/
+            /*overflow-y: hidden;*/
+            overflow: hidden auto;/*x and y ka ek hi sath me aise likh sakte hain*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a good boy and I love yo write Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias a blanditiis ea quasi explicabo commodi dolor quod at. Numquam nesciunt ratione optio eos culpa et provident ullam, asperiores est molestiae, repellat autem vel eius nemo sit voluptas voluptatibus. Natus animi eos cupiditate saepe blanditiis.
+    </div>
+</body>
+</html>

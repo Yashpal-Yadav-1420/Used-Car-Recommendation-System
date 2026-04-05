@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child{
+            background-color: red;
+        }
+
+        .box::first-line{
+            color: blue;
+        }
+
+        .boxes *{
+            color:cyan;
+            border: 2px solid black;
+        }
+
+        p, a, .box, [data-color="primary"]{
+            margin-top: 45px;
+        }
+        .boxes::before{
+            content:"Harry is good";
+            color: aquamarine;      
+          }
+
+        .boxes::after{
+            content: "Sigma course is also good";
+            color: coral ;
+        }
+        ::selection{
+            color:deeppink;
+            background-color: black;
+        }
+        .box::first-letter{
+            color:peru;
+        }
+        input::placeholder{
+            color:palegreen
+        }
+
+    </style>
+</head>
+<body>
+    <dv class="boxes">
+        <div data-color="primary" class="box">Hey I am a box </div>
+        <div class="box">Hey I am a box </div>
+        <div class="box">Hey I am a box </div>
+        <input type="text" placeholder="Type your name here">
+    </dv>
+</body>
+</html>

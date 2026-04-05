@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{background: #eef2f3;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px;
+        }
+        .container{
+            display: grid;
+            /*grid-template-columns: 1fr 1fr 1fr;*//*divide's the space into three equal parts*/
+            grid-template-columns: auto 1fr 1fr;
+            /*fr adjusts themselves according to the screen size*/
+            grid-template-rows:150px 150px ;
+            background: white;
+            padding: 20px;
+            border: 3px solid #e3e3e3;
+            border-radius: 10px;
+            gap: 10px; /*har element ke bich me 10 px ka gap aa gaya*/ 
+        }
+        .item{
+            background: #90e0ef;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 120px;
+            font-size: 22px;
+        }
+        .container :nth-child(2){background: #48cae4;}
+        .container :nth-child(3){background: #31b7d2;}
+        .container :nth-child(4){background: #1b8397;}
+        .container :nth-child(5){background: #0d3138;}
+        .container :nth-child(6){background: #000000;}
+    </style>
+</head>
+<body>
+    <h1>Grid container</h1>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <p>Used in layout system and n complex layout system <br>
+       flexbox arranges elements in rowise direction or column wise direction</p> <br>
+       <p>Grid arranges elements in both directions(row and column) at the same time</p>
+       <p>Kisi bhi odinary box ko grid me kais convert kiya jaye</p>
+       <ol>
+        <li>First define the container first whom you want to convert into grid</li>
+        <li>Grid is perfect for multirow layout(5rows, 4 columns, irregular spaces)</li>
+        <li>reduces the quantity of wrepper div's</li>
+        <li>Don't get confused in grid anf flexbox, grid is for structure and flexbox is for alignment inside the grid</li>
+       </ol>
+       <ul>
+        <li>don't use pixel for columns use it only for rows if needed as pixel makes layout difficult </li>  
+       </ul>
+</body>
+</html>

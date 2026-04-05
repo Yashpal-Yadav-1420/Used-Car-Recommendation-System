@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Aap</title>
+  <style>
+    .n{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .grid-container{
+      display: grid;
+      grid-template-columns:200px 150px 100px ;
+      column-gap: 10px;
+      row-gap: 10px;
+      margin-top: 10px;
+      align-items: center;
+    }
+    #todo-input, #todo-date{
+      font-size: 15px;
+      padding: 10px 5px;
+    }
+    .btn-delete{
+      background-color: rgb(212, 59, 59);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 0px;
+      cursor: pointer;
+    }
+    .btn-todo{
+      background-color: rgb(18, 125, 30);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 0px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="n">Todo Aap</h1>
+  <!--<label for="dob">Date of Birth:</label>-->
+  <div class="grid-container">
+    <input id="todo-input" type="text" placeholder="Enter TODO here">
+    <input id="todo-date" type="date">
+    <button class="btn-todo" onclick="addTodo();">Add</button>
+  </div>
+  <div class="todo-container grid-container"></div>
+  <script src="todo.js"></script>
+</body>
+</html>  

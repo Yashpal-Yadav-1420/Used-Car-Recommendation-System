@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .Cards{
+            border: 2px solid purple;
+            display:flow-root;
+        }
+        img{
+            float:left;/*yeh image ke left side me content ko aane dega*/
+        }
+        .Card{
+            border: 2px solid greenyellow;
+        }
+        .Card:nth-child(3){
+            background-color: aqua;
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="Cards">
+        <img src="https://cdn.mos.cms.futurecdn.net/ntFmJUZ8tw3ULD3tkBaAtf.jpg" alt="" width="290">
+        <div class="Card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto mollitia, aliquid quo et totam quisquam veritatis sint facilis minus magni necessitatibus delectus molestiae, temporibus sequi similique. Minus tempora molestias officiis quidem perferendis sint similique.</div>
+        <div class="Card">Card 2</div>
+        <div class="Card">Card 3</div>
+    </div>
+</body>
+</html>
