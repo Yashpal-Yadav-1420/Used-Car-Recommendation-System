@@ -1,16 +1,13 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import streamlit as st
 # optional streamlit import
-try:
-    import streamlit as st
-except:
-    st = None
+import os
 
-# -----------------------------
-# Load Dataset
-# -----------------------------
-df = pd.read_csv("cars.csv")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+csv_path = os.path.join(BASE_DIR, "cars.csv")
+
+df = pd.read_csv(csv_path)
 
 # Clean data
 df.drop_duplicates(inplace=True)
